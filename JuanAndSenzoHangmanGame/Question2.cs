@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace JuanAndSenzoHangmanGame
 {
-    public partial class Question1 : Form
+    public partial class Question2 : Form
     {
         private int correct;
         private int wrong;
-        public Question1()
+        public Question2()
         {
             InitializeComponent();
         }
@@ -26,40 +26,33 @@ namespace JuanAndSenzoHangmanGame
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(txtAnswer.Text == "o")
-            {
-                lblLetter1.Text = "o";
-                txtAnswer.Text = "";
-                correct++;
-            }
-            if (txtAnswer.Text == "n")
-            {
-                lblLetter2.Text = "n";
-                lblLetter7.Text = "n";
-                txtAnswer.Text = "";
-                correct++;
-            }
-            if (txtAnswer.Text == "i")
-            {
-                lblLetter3.Text = "i";
-                txtAnswer.Text = "";
-                correct++;
-            }
             if (txtAnswer.Text == "c")
             {
-                lblLetter4.Text = "c";
+                lblLetter1.Text = "c";
                 txtAnswer.Text = "";
                 correct++;
             }
             if (txtAnswer.Text == "h")
             {
-                lblLetter5.Text = "h";
+                lblLetter2.Text = "h";
+                txtAnswer.Text = "";
+                correct++;
+            }
+            if (txtAnswer.Text == "o")
+            {
+                lblLetter3.Text = "o";
+                txtAnswer.Text = "";
+                correct++;
+            }
+            if (txtAnswer.Text == "s")
+            {
+                lblLetter4.Text = "s";
                 txtAnswer.Text = "";
                 correct++;
             }
             if (txtAnswer.Text == "a")
             {
-                lblLetter6.Text = "a";
+                lblLetter5.Text = "a";
                 txtAnswer.Text = "";
                 correct++;
             }
@@ -68,12 +61,12 @@ namespace JuanAndSenzoHangmanGame
                 txtAnswer.Text = "";
                 wrong++;
             }
-            if (correct == 6)
+            if (correct == 5)
             {
-                MessageBox.Show("You are correct the word is onichan");
+                MessageBox.Show("You are correct the word is chosa");
                 this.Hide();
-                var question2 = new Question2();
-                question2.Show();
+                var question3 = new Question3();
+                question3.Show();
             }
             if (wrong == 9)
             {
@@ -83,8 +76,6 @@ namespace JuanAndSenzoHangmanGame
                 lblLetter3.Text = "";
                 lblLetter4.Text = "";
                 lblLetter5.Text = "";
-                lblLetter6.Text = "";
-                lblLetter7.Text = "";
                 wrong = 0;
             }
         }
