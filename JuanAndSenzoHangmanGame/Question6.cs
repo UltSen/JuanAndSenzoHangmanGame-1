@@ -12,13 +12,13 @@ using System.Media;
 namespace JuanAndSenzoHangmanGame
 {
     //Juan Work
-    public partial class Question1 : Form
+    public partial class Question6 : Form
     {
         private int correct;
         private int wrong;
         private SoundPlayer correctSound;
         private SoundPlayer wrongSound;
-        public Question1()
+        public Question6()
         {
             InitializeComponent();
             correctSound = new SoundPlayer(@"Sounds\Crowd_Excited_Sound_Effect.wav");
@@ -32,40 +32,39 @@ namespace JuanAndSenzoHangmanGame
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(txtAnswer.Text == "o")
+            if (txtAnswer.Text == "t")
             {
-                lblLetter1.Text = "o";
-                txtAnswer.Text = "";
-                correct++;
-            }
-            if (txtAnswer.Text == "n")
-            {
-                lblLetter2.Text = "n";
-                lblLetter7.Text = "n";
-                txtAnswer.Text = "";
-                correct++;
-            }
-            if (txtAnswer.Text == "i")
-            {
-                lblLetter3.Text = "i";
-                txtAnswer.Text = "";
-                correct++;
-            }
-            if (txtAnswer.Text == "c")
-            {
-                lblLetter4.Text = "c";
-                txtAnswer.Text = "";
-                correct++;
-            }
-            if (txtAnswer.Text == "h")
-            {
-                lblLetter5.Text = "h";
+                lblLetter1.Text = "t";
                 txtAnswer.Text = "";
                 correct++;
             }
             if (txtAnswer.Text == "a")
             {
-                lblLetter6.Text = "a";
+                lblLetter2.Text = "a";
+                txtAnswer.Text = "";
+                correct++;
+            }
+            if (txtAnswer.Text == "b")
+            {
+                lblLetter3.Text = "b";
+                txtAnswer.Text = "";
+                correct++;
+            }
+            if (txtAnswer.Text == "e")
+            {
+                lblLetter4.Text = "e";
+                txtAnswer.Text = "";
+                correct++;
+            }
+            if (txtAnswer.Text == "r")
+            {
+                lblLetter5.Text = "r";
+                txtAnswer.Text = "";
+                correct++;
+            }
+            if (txtAnswer.Text == "u")
+            {
+                lblLetter6.Text = "u";
                 txtAnswer.Text = "";
                 correct++;
             }
@@ -77,11 +76,11 @@ namespace JuanAndSenzoHangmanGame
             if (correct == 6)
             {
                 correctSound.Play();
-                MessageBox.Show("You are correct the word is onichan");
+                MessageBox.Show("You are correct the word is taberu");
                 correctSound.Stop();
                 this.Hide();
-                var question2 = new Question2();
-                question2.Show();
+                var question7 = new Question7();
+                question7.Show();
             }
             if (wrong == 9)
             {
@@ -93,7 +92,6 @@ namespace JuanAndSenzoHangmanGame
                 lblLetter4.Text = "";
                 lblLetter5.Text = "";
                 lblLetter6.Text = "";
-                lblLetter7.Text = "";
                 wrong = 0;
             }
         }
