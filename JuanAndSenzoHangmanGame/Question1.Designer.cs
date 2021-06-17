@@ -41,6 +41,8 @@ namespace JuanAndSenzoHangmanGame
             this.lblLetter2 = new System.Windows.Forms.Label();
             this.lblLetter1 = new System.Windows.Forms.Label();
             this.lblHeading = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -165,12 +167,23 @@ namespace JuanAndSenzoHangmanGame
             this.lblHeading.TabIndex = 12;
             this.lblHeading.Text = "What is big brother in Japanese?";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::JuanAndSenzoHangmanGame.Properties.Resources.vertical_pole;
+            this.pictureBox1.Location = new System.Drawing.Point(49, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(10, 245);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
             // Question1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtAnswer);
@@ -187,6 +200,7 @@ namespace JuanAndSenzoHangmanGame
             this.Name = "Question1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Question8";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +220,6 @@ namespace JuanAndSenzoHangmanGame
         private System.Windows.Forms.Label lblLetter2;
         private System.Windows.Forms.Label lblLetter1;
         private System.Windows.Forms.Label lblHeading;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
