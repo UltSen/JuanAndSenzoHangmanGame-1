@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace JuanAndSenzoHangmanGame
 {
+    //Juan Work
     public partial class Question6 : Form
     {
         private int correct;
         private int wrong;
+        private SoundPlayer correctSound;
+        private SoundPlayer wrongSound;
         public Question6()
         {
             InitializeComponent();
+            correctSound = new SoundPlayer(@"Sounds\Crowd_Excited_Sound_Effect.wav");
+            wrongSound = new SoundPlayer(@"Sounds\Wrong_Buzzer_-_Sound_Effect.wav");
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -69,13 +75,16 @@ namespace JuanAndSenzoHangmanGame
             }
             if (correct == 6)
             {
+                correctSound.Play();
                 MessageBox.Show("You are correct the word is taberu");
+                correctSound.Stop();
                 this.Hide();
-                var question1 = new Question1();
-                question1.Show();
+                var question7 = new Question7();
+                question7.Show();
             }
             if (wrong == 9)
             {
+                wrongSound.Play();
                 MessageBox.Show("Sorry you have been hung");
                 lblLetter1.Text = "";
                 lblLetter2.Text = "";

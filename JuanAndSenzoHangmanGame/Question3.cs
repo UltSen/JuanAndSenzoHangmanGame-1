@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace JuanAndSenzoHangmanGame
 {
+    //Juan Work
     public partial class Question3 : Form
     {
         private int correct;
         private int wrong;
+        private SoundPlayer correctSound;
+        private SoundPlayer wrongSound;
         public Question3()
         {
             InitializeComponent();
+            correctSound = new SoundPlayer(@"Sounds\Crowd_Excited_Sound_Effect.wav");
+            wrongSound = new SoundPlayer(@"Sounds\Wrong_Buzzer_-_Sound_Effect.wav");
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -64,13 +70,16 @@ namespace JuanAndSenzoHangmanGame
             }
             if (correct == 5)
             {
+                correctSound.Play();
                 MessageBox.Show("You are correct the word is Otosan");
+                correctSound.Stop();
                 this.Hide();
                 var question4 = new Question4();
                 question4.Show();
             }
             if (wrong == 9)
             {
+                wrongSound.Play();
                 MessageBox.Show("Sorry you have been hung");
                 lblLetter1.Text = "";
                 lblLetter2.Text = "";
