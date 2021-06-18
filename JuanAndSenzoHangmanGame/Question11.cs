@@ -12,13 +12,13 @@ using System.Media;
 namespace JuanAndSenzoHangmanGame
 {
     //Senzo Work
-    public partial class Question7 : Form
+    public partial class Question11 : Form
     {
         private int correct;
         private int wrong;
         private SoundPlayer correctSound;
         private SoundPlayer wrongSound;
-        public Question7()
+        public Question11()
         {
             InitializeComponent();
             correctSound = new SoundPlayer(@"Sounds\Crowd_Exicted_Sound_Effect.wav");
@@ -31,52 +31,46 @@ namespace JuanAndSenzoHangmanGame
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (txtbxAns7.Text == "s")
+            if (txtbxAns11.Text == "t")
             {
-                lblLetter1.Text = "s";
-                txtbxAns7.Text = "";
+                lblLetter1.Text = "t";
+                lblLetter3.Text = "t";
+                txtbxAns11.Text = "";
                 correct++;
             }
-            if (txtbxAns7.Text == "h")
+            if (txtbxAns11.Text == "a")
             {
-                lblLetter2.Text = "h";
-                txtbxAns7.Text = "";
+                lblLetter2.Text = "a";
+                lblLetter4.Text = "a";
+                lblLetter6.Text = "a";
+                txtbxAns11.Text = "";
                 correct++;
             }
-            if (txtbxAns7.Text == "u")
+            if (txtbxAns11.Text == "k")
             {
-                lblLetter3.Text = "u";
-                lblLetter6.Text = "u";
+                lblLetter5.Text = "k";
+                txtbxAns11.Text = "";
+                correct++;
+            }
+            if (txtbxAns11.Text == "u")
+            {
                 lblLetter7.Text = "u";
-                txtbxAns7.Text = "";
-                correct++;
-            }
-
-            if (txtbxAns7.Text == "k")
-            {
-                lblLetter4.Text = "k";
-                txtbxAns7.Text = "";
-                correct++;
-            }
-            if (txtbxAns7.Text == "y")
-            {
-                lblLetter5.Text = "y";
-                txtbxAns7.Text = "";
+                txtbxAns11.Text = "";
                 correct++;
             }
             else
             {
-                txtbxAns7.Text = "";
+                txtbxAns11.Text = "";
                 wrong++;
             }
-            if (correct == 5)
+            if (correct == 4)
             {
                 correctSound.Play();
-                MessageBox.Show("You are correct, the word is shukyuu");
+                MessageBox.Show("You are correct, the word is tatakau");
                 correctSound.Stop();
                 this.Hide();
-                var question8 = new Question8();
-                question8.Show();
+                var question12 = new Question12();
+                question12.Show(); ;
             }
             if (wrong == 8)
             {
@@ -95,9 +89,9 @@ namespace JuanAndSenzoHangmanGame
 
         }
 
-        private void Question7_Load(object sender, EventArgs e)
+        private void Question11_Load(object sender, EventArgs e)
         {
-            lblHeading.Text = "What is the Japanese word for football?";
+            lblHeading.Text = "What is the Japanese word for fight?";
         }
     }
 }
