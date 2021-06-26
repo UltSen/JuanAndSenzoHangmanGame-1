@@ -156,25 +156,31 @@
     <None Include="Resources\Hangman.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\Pics\righthand.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="bin\Debug\Pics\vertical pole.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\Pics\Vertical pole 2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\Pics\rope.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\Pics\arm.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Pics\Horizontal pole.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Pics\rope.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="bin\Debug\Pics\head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pics\Body.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pics\left arm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pics\right arm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pics\left leg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Pics\right leg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
