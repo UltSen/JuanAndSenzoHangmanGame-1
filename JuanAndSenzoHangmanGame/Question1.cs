@@ -33,7 +33,7 @@ namespace JuanAndSenzoHangmanGame
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             // correct calculation
-            if(txtAnswer.Text == "o")
+            if (txtAnswer.Text == "o")
             {
                 lblLetter1.Text = "o";
                 txtAnswer.Text = "";
@@ -240,7 +240,7 @@ namespace JuanAndSenzoHangmanGame
 
         private void Question1_Load(object sender, EventArgs e)
         {
-    
+
         }
     }
 }
