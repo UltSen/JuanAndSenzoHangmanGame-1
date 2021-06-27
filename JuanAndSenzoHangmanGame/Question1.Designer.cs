@@ -193,6 +193,7 @@ namespace JuanAndSenzoHangmanGame
             this.picRightLeg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picRightLeg.TabIndex = 32;
             this.picRightLeg.TabStop = false;
+            this.picRightLeg.Visible = false;
             // 
             // picHead
             // 
@@ -203,6 +204,7 @@ namespace JuanAndSenzoHangmanGame
             this.picHead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHead.TabIndex = 27;
             this.picHead.TabStop = false;
+            this.picHead.Visible = false;
             // 
             // picBody
             // 
@@ -213,6 +215,7 @@ namespace JuanAndSenzoHangmanGame
             this.picBody.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picBody.TabIndex = 28;
             this.picBody.TabStop = false;
+            this.picBody.Visible = false;
             // 
             // picLeftLeg
             // 
@@ -223,6 +226,7 @@ namespace JuanAndSenzoHangmanGame
             this.picLeftLeg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picLeftLeg.TabIndex = 31;
             this.picLeftLeg.TabStop = false;
+            this.picLeftLeg.Visible = false;
             // 
             // picRightArm
             // 
@@ -233,6 +237,7 @@ namespace JuanAndSenzoHangmanGame
             this.picRightArm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picRightArm.TabIndex = 30;
             this.picRightArm.TabStop = false;
+            this.picRightArm.Visible = false;
             // 
             // picLeftArm
             // 
@@ -242,6 +247,7 @@ namespace JuanAndSenzoHangmanGame
             this.picLeftArm.Size = new System.Drawing.Size(67, 32);
             this.picLeftArm.TabIndex = 29;
             this.picLeftArm.TabStop = false;
+            this.picLeftArm.Visible = false;
             // 
             // picHorPole
             // 
@@ -252,6 +258,7 @@ namespace JuanAndSenzoHangmanGame
             this.picHorPole.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picHorPole.TabIndex = 25;
             this.picHorPole.TabStop = false;
+            this.picHorPole.Visible = false;
             // 
             // picRope
             // 
@@ -262,6 +269,7 @@ namespace JuanAndSenzoHangmanGame
             this.picRope.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picRope.TabIndex = 26;
             this.picRope.TabStop = false;
+            this.picRope.Visible = false;
             // 
             // picVerPole
             // 
@@ -272,6 +280,7 @@ namespace JuanAndSenzoHangmanGame
             this.picVerPole.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picVerPole.TabIndex = 24;
             this.picVerPole.TabStop = false;
+            this.picVerPole.Visible = false;
             // 
             // Question1
             // 
@@ -304,6 +313,7 @@ namespace JuanAndSenzoHangmanGame
             this.Name = "Question1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Question8";
+            this.Load += new System.EventHandler(this.Question1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picRightLeg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBody)).EndInit();
