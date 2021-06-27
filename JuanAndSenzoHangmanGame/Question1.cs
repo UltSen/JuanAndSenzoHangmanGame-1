@@ -32,7 +32,8 @@ namespace JuanAndSenzoHangmanGame
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(txtAnswer.Text == "o")
+            // correct calculation
+            if (txtAnswer.Text == "o")
             {
                 lblLetter1.Text = "o";
                 txtAnswer.Text = "";
@@ -70,7 +71,7 @@ namespace JuanAndSenzoHangmanGame
                 correct++;
             }
             if (correct == 6)
-            { 
+            {
                 correctSound.Play();
                 MessageBox.Show("You are correct the word is onichan");
                 correctSound.Stop();
@@ -78,8 +79,142 @@ namespace JuanAndSenzoHangmanGame
                 var question2 = new Question2();
                 question2.Show();
             }
+            // wrong calculation
+            if (txtAnswer.Text == "b")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "d")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "e")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "f")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "g")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "j")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "k")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "l")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "m")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "p")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "q")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "r")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "s")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "t")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "u")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "v")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "w")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "x")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "y")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "z")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (wrong == 1)
+            {
+                picVerPole.Visible = true;
+            }
+            if (wrong == 2)
+            {
+                picHorPole.Visible = true;
+            }
+            if (wrong == 3)
+            {
+                picRope.Visible = true;
+            }
+            if (wrong == 4)
+            {
+                picHead.Visible = true;
+            }
+            if (wrong == 5)
+            {
+                picBody.Visible = true;
+            }
+            if (wrong == 6)
+            {
+                picLeftArm.Visible = true;
+            }
+            if (wrong == 7)
+            {
+                picRightArm.Visible = true;
+            }
+            if (wrong == 8)
+            {
+                picLeftLeg.Visible = true;
+            }
             if (wrong == 9)
             {
+                picRightLeg.Visible = true;
                 wrongSound.Play();
                 MessageBox.Show("Sorry you have been hung");
                 lblLetter1.Text = "";
@@ -89,13 +224,23 @@ namespace JuanAndSenzoHangmanGame
                 lblLetter5.Text = "";
                 lblLetter6.Text = "";
                 lblLetter7.Text = "";
+                correct = 0;
                 wrong = 0;
+                picVerPole.Visible = false;
+                picHorPole.Visible = false;
+                picRope.Visible = false;
+                picHead.Visible = false;
+                picBody.Visible = false;
+                picLeftArm.Visible = false;
+                picRightArm.Visible = false;
+                picLeftLeg.Visible = false;
+                picRightLeg.Visible = false;
             }
         }
 
         private void Question1_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
