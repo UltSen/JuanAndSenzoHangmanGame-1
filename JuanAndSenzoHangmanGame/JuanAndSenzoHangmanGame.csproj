@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Kanji.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -229,6 +232,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Pics\right leg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kanji.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
