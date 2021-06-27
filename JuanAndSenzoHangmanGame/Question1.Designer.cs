@@ -64,7 +64,7 @@ namespace JuanAndSenzoHangmanGame
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.LightGray;
+            this.btnExit.BackColor = System.Drawing.Color.Purple;
             this.btnExit.Font = new System.Drawing.Font("Unispace", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(664, 386);
             this.btnExit.Name = "btnExit";
@@ -76,7 +76,7 @@ namespace JuanAndSenzoHangmanGame
             // 
             // btnSubmit
             // 
-            this.btnSubmit.BackColor = System.Drawing.Color.LightGray;
+            this.btnSubmit.BackColor = System.Drawing.Color.Purple;
             this.btnSubmit.Font = new System.Drawing.Font("Unispace", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.Location = new System.Drawing.Point(542, 386);
             this.btnSubmit.Name = "btnSubmit";
@@ -304,6 +304,7 @@ namespace JuanAndSenzoHangmanGame
             this.Name = "Question1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Question8";
+            this.Load += new System.EventHandler(this.Question1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picRightLeg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHead)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBody)).EndInit();

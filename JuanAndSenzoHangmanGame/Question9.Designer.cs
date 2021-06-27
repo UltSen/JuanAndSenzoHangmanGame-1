@@ -29,6 +29,7 @@ namespace JuanAndSenzoHangmanGame
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Question9));
             this.lblLetter7 = new System.Windows.Forms.Label();
             this.lblLetter6 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
@@ -41,6 +42,24 @@ namespace JuanAndSenzoHangmanGame
             this.lblLetter2 = new System.Windows.Forms.Label();
             this.lblLetter1 = new System.Windows.Forms.Label();
             this.lblHeading = new System.Windows.Forms.Label();
+            this.picHead = new System.Windows.Forms.PictureBox();
+            this.picBody = new System.Windows.Forms.PictureBox();
+            this.picLeftLeg = new System.Windows.Forms.PictureBox();
+            this.picRightLeg = new System.Windows.Forms.PictureBox();
+            this.picRightArm = new System.Windows.Forms.PictureBox();
+            this.picLeftArm = new System.Windows.Forms.PictureBox();
+            this.picHorPole = new System.Windows.Forms.PictureBox();
+            this.picRope = new System.Windows.Forms.PictureBox();
+            this.picVerPole = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picHead)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBody)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLeftLeg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRightLeg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRightArm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLeftArm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHorPole)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRope)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVerPole)).BeginInit();
             this.SuspendLayout();
             // 
             // lblLetter7
@@ -65,7 +84,7 @@ namespace JuanAndSenzoHangmanGame
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.LightGray;
+            this.btnExit.BackColor = System.Drawing.Color.Purple;
             this.btnExit.Font = new System.Drawing.Font("Unispace", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(668, 397);
             this.btnExit.Name = "btnExit";
@@ -77,7 +96,7 @@ namespace JuanAndSenzoHangmanGame
             // 
             // btnSubmit
             // 
-            this.btnSubmit.BackColor = System.Drawing.Color.LightGray;
+            this.btnSubmit.BackColor = System.Drawing.Color.Purple;
             this.btnSubmit.Font = new System.Drawing.Font("Unispace", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.Location = new System.Drawing.Point(546, 397);
             this.btnSubmit.Name = "btnSubmit";
@@ -165,12 +184,110 @@ namespace JuanAndSenzoHangmanGame
             this.lblHeading.TabIndex = 104;
             this.lblHeading.Text = "What is eat in Japanese?";
             // 
+            // picHead
+            // 
+            this.picHead.Image = global::JuanAndSenzoHangmanGame.Properties.Resources.Head;
+            this.picHead.Location = new System.Drawing.Point(213, 153);
+            this.picHead.Name = "picHead";
+            this.picHead.Size = new System.Drawing.Size(65, 38);
+            this.picHead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHead.TabIndex = 119;
+            this.picHead.TabStop = false;
+            // 
+            // picBody
+            // 
+            this.picBody.Image = ((System.Drawing.Image)(resources.GetObject("picBody.Image")));
+            this.picBody.Location = new System.Drawing.Point(240, 187);
+            this.picBody.Name = "picBody";
+            this.picBody.Size = new System.Drawing.Size(10, 72);
+            this.picBody.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picBody.TabIndex = 120;
+            this.picBody.TabStop = false;
+            // 
+            // picLeftLeg
+            // 
+            this.picLeftLeg.Image = ((System.Drawing.Image)(resources.GetObject("picLeftLeg.Image")));
+            this.picLeftLeg.Location = new System.Drawing.Point(194, 240);
+            this.picLeftLeg.Name = "picLeftLeg";
+            this.picLeftLeg.Size = new System.Drawing.Size(55, 63);
+            this.picLeftLeg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picLeftLeg.TabIndex = 123;
+            this.picLeftLeg.TabStop = false;
+            // 
+            // picRightLeg
+            // 
+            this.picRightLeg.Image = global::JuanAndSenzoHangmanGame.Properties.Resources.right_leg;
+            this.picRightLeg.Location = new System.Drawing.Point(240, 251);
+            this.picRightLeg.Name = "picRightLeg";
+            this.picRightLeg.Size = new System.Drawing.Size(74, 52);
+            this.picRightLeg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picRightLeg.TabIndex = 124;
+            this.picRightLeg.TabStop = false;
+            // 
+            // picRightArm
+            // 
+            this.picRightArm.Image = global::JuanAndSenzoHangmanGame.Properties.Resources.right_arm;
+            this.picRightArm.Location = new System.Drawing.Point(249, 188);
+            this.picRightArm.Name = "picRightArm";
+            this.picRightArm.Size = new System.Drawing.Size(55, 31);
+            this.picRightArm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picRightArm.TabIndex = 122;
+            this.picRightArm.TabStop = false;
+            // 
+            // picLeftArm
+            // 
+            this.picLeftArm.Image = global::JuanAndSenzoHangmanGame.Properties.Resources.left_arm;
+            this.picLeftArm.Location = new System.Drawing.Point(183, 187);
+            this.picLeftArm.Name = "picLeftArm";
+            this.picLeftArm.Size = new System.Drawing.Size(67, 32);
+            this.picLeftArm.TabIndex = 121;
+            this.picLeftArm.TabStop = false;
+            // 
+            // picHorPole
+            // 
+            this.picHorPole.Image = global::JuanAndSenzoHangmanGame.Properties.Resources.Horizontal_pole;
+            this.picHorPole.Location = new System.Drawing.Point(87, 77);
+            this.picHorPole.Name = "picHorPole";
+            this.picHorPole.Size = new System.Drawing.Size(298, 10);
+            this.picHorPole.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picHorPole.TabIndex = 117;
+            this.picHorPole.TabStop = false;
+            // 
+            // picRope
+            // 
+            this.picRope.Image = global::JuanAndSenzoHangmanGame.Properties.Resources.rope;
+            this.picRope.Location = new System.Drawing.Point(240, 77);
+            this.picRope.Name = "picRope";
+            this.picRope.Size = new System.Drawing.Size(10, 81);
+            this.picRope.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picRope.TabIndex = 118;
+            this.picRope.TabStop = false;
+            // 
+            // picVerPole
+            // 
+            this.picVerPole.Image = global::JuanAndSenzoHangmanGame.Properties.Resources.vertical_pole;
+            this.picVerPole.Location = new System.Drawing.Point(87, 77);
+            this.picVerPole.Name = "picVerPole";
+            this.picVerPole.Size = new System.Drawing.Size(10, 239);
+            this.picVerPole.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picVerPole.TabIndex = 116;
+            this.picVerPole.TabStop = false;
+            // 
             // Question9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.picHead);
+            this.Controls.Add(this.picBody);
+            this.Controls.Add(this.picLeftLeg);
+            this.Controls.Add(this.picRightLeg);
+            this.Controls.Add(this.picRightArm);
+            this.Controls.Add(this.picLeftArm);
+            this.Controls.Add(this.picHorPole);
+            this.Controls.Add(this.picRope);
+            this.Controls.Add(this.picVerPole);
             this.Controls.Add(this.lblLetter7);
             this.Controls.Add(this.lblLetter6);
             this.Controls.Add(this.btnExit);
@@ -188,6 +305,15 @@ namespace JuanAndSenzoHangmanGame
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Question9";
             this.Load += new System.EventHandler(this.Question9_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picHead)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBody)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLeftLeg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRightLeg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRightArm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLeftArm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHorPole)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRope)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVerPole)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +333,14 @@ namespace JuanAndSenzoHangmanGame
         private System.Windows.Forms.Label lblLetter2;
         private System.Windows.Forms.Label lblLetter1;
         private System.Windows.Forms.Label lblHeading;
+        private System.Windows.Forms.PictureBox picHead;
+        private System.Windows.Forms.PictureBox picBody;
+        private System.Windows.Forms.PictureBox picLeftLeg;
+        private System.Windows.Forms.PictureBox picRightLeg;
+        private System.Windows.Forms.PictureBox picRightArm;
+        private System.Windows.Forms.PictureBox picLeftArm;
+        private System.Windows.Forms.PictureBox picHorPole;
+        private System.Windows.Forms.PictureBox picRope;
+        private System.Windows.Forms.PictureBox picVerPole;
     }
 }

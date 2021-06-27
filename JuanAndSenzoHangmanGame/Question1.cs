@@ -69,11 +69,147 @@ namespace JuanAndSenzoHangmanGame
                 txtAnswer.Text = "";
                 correct++;
             }
-            else
+            if (txtAnswer.Text == "q")
             {
                 txtAnswer.Text = "";
                 wrong++;
             }
+            if (txtAnswer.Text == "w")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "e")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "r")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "t")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "y")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "u")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "p")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "s")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "d")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "f")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "g")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "h")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "j")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "k")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "l")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "z")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "x")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "v")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "b")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (txtAnswer.Text == "m")
+            {
+                txtAnswer.Text = "";
+                wrong++;
+            }
+            if (wrong == 1)
+            {
+                picVerPole.Show();
+            }
+            if (wrong == 2)
+            {
+                picHorPole.Show();
+            }
+            if (wrong == 3)
+            {
+                picRope.Show();
+            }
+            if (wrong == 4)
+            {
+                picHead.Show();
+            }
+            if (wrong == 5)
+            {
+                picBody.Show();
+            }
+            if (wrong == 6)
+            {
+                picLeftArm.Show();
+            }
+            if (wrong == 7)
+            {
+                picRightArm.Show();
+            }
+            if (wrong == 8)
+            {
+                picLeftLeg.Show();
+            }
+            if (wrong == 8)
+            {
+                picRightLeg.Show();
+            }            
             if (correct == 6)
             {
                 correctSound.Play();
@@ -96,6 +232,19 @@ namespace JuanAndSenzoHangmanGame
                 lblLetter7.Text = "";
                 wrong = 0;
             }
+        }
+
+        private void Question1_Load(object sender, EventArgs e)
+        {
+            picVerPole.Hide();
+            picHorPole.Hide();
+            picRope.Hide();
+            picHead.Hide();
+            picBody.Hide();
+            picLeftArm.Hide();
+            picRightArm.Hide();
+            picLeftLeg.Hide();
+            picRightLeg.Hide();  
         }
     }
 }
