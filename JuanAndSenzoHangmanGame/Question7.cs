@@ -21,7 +21,7 @@ namespace JuanAndSenzoHangmanGame
         public Question7()
         {
             InitializeComponent();
-            correctSound = new SoundPlayer(@"Sounds\Crowd_Exicted_Sound_Effect.wav");
+            correctSound = new SoundPlayer(@"Sounds\Crowd_Excited_Sound_Effect.wav");
             wrongSound = new SoundPlayer(@"Sounds\Wrong_Buzzer_-_Sound_Effect.wav");
         }
         private void btnExit_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace JuanAndSenzoHangmanGame
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
-        {
+        {//Code for correct answer
             if (txtbxAns7.Text == "s")
             {
                 lblLetter1.Text = "s";
@@ -51,7 +51,6 @@ namespace JuanAndSenzoHangmanGame
                 txtbxAns7.Text = "";
                 correct++;
             }
-
             if (txtbxAns7.Text == "k")
             {
                 lblLetter4.Text = "k";
@@ -64,11 +63,145 @@ namespace JuanAndSenzoHangmanGame
                 txtbxAns7.Text = "";
                 correct++;
             }
-            else
+            //Code to check for incorrect answer
+            if (txtbxAns7.Text == "q")
             {
                 txtbxAns7.Text = "";
                 wrong++;
             }
+            if (txtbxAns7.Text == "w")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "e")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "r")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "t")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "i")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "o")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "p")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "a")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "d")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "f")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "g")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "j")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "l")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "z")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "x")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "c")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "v")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "b")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "n")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            if (txtbxAns7.Text == "m")
+            {
+                txtbxAns7.Text = "";
+                wrong++;
+            }
+            //Stickman appearance conditions
+            if (wrong == 1)
+            {
+                picVerPole.Show();
+            }
+            if (wrong == 2)
+            {
+                picHorPole.Show();
+            }
+            if (wrong == 3)
+            {
+                picRope.Show();
+            }
+            if (wrong == 4)
+            {
+                picHead.Show();
+            }
+            if (wrong == 5)
+            {
+                picBody.Show();
+            }
+            if (wrong == 6)
+            {
+                picLeftArm.Show();
+            }
+            if (wrong == 7)
+            {
+                picRightArm.Show();
+            }
+            if (wrong == 8)
+            {
+                picLeftLeg.Show();
+            }            
             if (correct == 5)
             {
                 correctSound.Play();
@@ -78,8 +211,9 @@ namespace JuanAndSenzoHangmanGame
                 var question8 = new Question8();
                 question8.Show();
             }
-            if (wrong == 8)
+            if (wrong == 9)
             {
+                picRightLeg.Show();
                 wrongSound.Play();
                 MessageBox.Show("Sorry you have been hung");
                 wrongSound.Stop();
@@ -91,12 +225,30 @@ namespace JuanAndSenzoHangmanGame
                 lblLetter6.Text = "";
                 lblLetter7.Text = "";
                 wrong = 0;
-            }
-
+                correct = 0;
+                picVerPole.Hide();
+                picHorPole.Hide();
+                picRope.Hide();
+                picHead.Hide();
+                picBody.Hide();
+                picLeftArm.Hide();
+                picRightArm.Hide();
+                picLeftLeg.Hide();
+                picRightLeg.Hide();
+            }           
         }
 
         private void Question7_Load(object sender, EventArgs e)
         {
+            picVerPole.Hide();
+            picHorPole.Hide();
+            picRope.Hide();
+            picHead.Hide();
+            picBody.Hide();
+            picLeftArm.Hide();
+            picRightArm.Hide();
+            picLeftLeg.Hide();
+            picRightLeg.Hide();
             lblHeading.Text = "What is the Japanese word for football?";
         }
     }

@@ -34,7 +34,7 @@ namespace JuanAndSenzoHangmanGame
             MessageBox.Show("Type a letter in the box indicated.");
             MessageBox.Show("Press submit to make your guess.");
             MessageBox.Show("You will proceed to the next word if you get the whole word.");
-            MessageBox.Show("If you however make 8 incorrect guesses you lose!");
+            MessageBox.Show("If you however make 9 incorrect guesses you lose!");
             MessageBox.Show("Simple right? Now go learn something and guess away!");
         }
     }

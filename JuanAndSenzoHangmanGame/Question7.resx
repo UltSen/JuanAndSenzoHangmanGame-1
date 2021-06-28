@@ -117,4 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="picBody.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAYAAAF8CAYAAADsAspbAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAOdJREFUaEPtmcENwjAUxToIizAIg7AIgzBIF2EQ+M4BVZUvSFzy875kqdg9IVCS
+        dqu5FPfiwYfjvIr3AW4cc5TwLMacA4xJ6BjGDyKhY7gWCS3DrUiYObBaJ6wVxu4soWMY2+eEicNeJLQM
+        HIIT1gqgElSCSlAJKkElqASVoBJUgkpQCSpBJagElaASVIJKUAkqQSWoBJWgElSCSlAJKkElqASVoBJU
+        gkpQCeMfmtAysOAmrBXYPyfMHDjDJrQMPHlKaBl4kJwwc+BlTsJagXezCS0Dk/CHcP6GOW5+h8h2h3WR
+        659m2z63Og24WDOz5QAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="picLeftLeg.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAHoAAABxCAYAAAAanrcnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAgRJREFUeF7t3MFNI1EURFEHQiIEQiAkQiAEQiIEAv0kkFCreV676hzpr2Z5sbHr
+        M30DAAAAzp6O83mcr5/zehzCPB/nN/DfQ5D/Is8hxLw9XwWe83IcAmyR53f1/M7mwW2RP44jcoC341wF
+        njORCbBFfj8OASbkVeA58wNAgHlLvgo8R+QA86Fqi2z9CnCeNM9H5AAiF5hJc4s8/86D23brOSIH2CKb
+        NEPYrQuIXMBuXUDkAi4nCtitC4gcbj45u5wIZ7cucC+yv9QM4HKigMuJAvN2fBV3jkkzhN26gMgF7NYF
+        RC6wRTZphrBbFxA5nN26gMgF7kV2ORHAbl1gizyvcJEDuJwoYLcusEWe788iB7BbFxC5gCf+FLBbF9gi
+        mzQD2K0LiFxgJsstskkzwLZbzxE5wBZ5XuEiB7BbFxC5wBbZpBnCbl1gi+yJPyHs1gVEDjefnF1OhLNb
+        FxC5wEyWW2STZoBtt54jcoAtskkzhN26gMgF7NYFRC7gcqKA3bqAyOHmk7PLiXB26wL3InviTwC7dQGR
+        C3jiTwG7dYEt8ny1EjmA3bqAyAU88aeA3bqAyOHs1gVELnAvskkzgN26wBZ5XuEiB7BbFxC5gMuJAnbr
+        Altkf1QfwuVEAbt1gS2ySTOA3bqAyCW278kmzSBXgeeIHOYc2OVEqL//k8Ju/dBut2/XH/jNQPf8FgAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
 </root>
